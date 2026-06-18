@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+}
+.reserve-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #E9ECFF;
+    padding: 0 30px;
+    border-bottom: 2px solid black;
+}
+.reserve-nav div{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Geist Mono", monospace;
+}
+
+
+
+.homeBtn-reserve, .aboutBtn-reserve{
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+
+}
+
+.reserveBtn-reserve{
+    background-color: #808DFD;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+}
+
+.bookSessionTitle-reserve{
+    font-size: 5rem;
+}
+
+.bookSessionTitle-reserve h1{
+    display: inline;
+    font-family: "Anek Tamil", sans-serif;
+}
+
+.bookSessionTitle-reserve h1:nth-of-type(2){
+    color: #808DFD;
+}
+
+.mainSectionTop-reserve{
+    display: flex;
+    height: 70vh;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.mainSectionTop-reserve > div{
+    background-color: #E9ECFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+
+.mainSectionTop-reserve div div{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+
+.mainSectionTop-conditioning{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.mainSectionTop-reserve div h2{
+    font-size: 3rem;
+}
+
+.mainSectionTop-reserve div p{
+    font-size: 1.5rem;
+
+}
+
+
+
+.mainSectionTop-reserve div div p:not(.mainSectionTop-reserve div div p:last-child, .mainSectionTop-community div p:nth-of-type(2)){
+    border-bottom: 1px solid black;
+}
+/* .mainSectionTop-reserve div p:not(.mainSectionTop-community p:nth-of-type(2), .mainSectionTop-reserve div div p:nth-of-type(3)){
+    border-bottom: 1px solid black;
+} */
+
+
+
+.mainSectionTop-reserve div button{
+    font-size: 1.2rem;
+    background-color: #808DFD;
+    border: none;
+    border-radius: 7px;
+    padding: 15px 0;
+    
+}
+
+
+.mainSectionBottom-reserve{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #808DFD;
+}
+
+.mainSectionBottom-reserve h2{
+    font-size: 4rem;
+    font-family: "Anek Tamil", sans-serif;
+}
+
+.mainSectionBottom-reserve p{
+    font-family: "Geist", sans-serif;
+    font-size: 1.5rem;
+    max-width: 1000px;
+    text-align: center;
+
+}
+
+.mainSectionBottom-reserve button{
+    border: none;
+    font-size: 1.2rem;
+    font-family: "Geist Mono", monospace;
+    padding: 15px 20px;
+    background-color: #E9ECFF;
+    border-radius: 7px;
+}
+
+.primalTrainingFooter-reserve{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9ECFF;
+    width: 100%;
+    height: 70vh;
+    padding: 20px 0;
+    font-family: "Anek Tamil", sans-serif;
+    font-weight: bold;
+}
+
+.primalFooterTop-reserve{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.primalFooterTopImgHolder-reserve{
+    background-image: url('../../../public/images/footerImg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.primalFooterBottom-reserve{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+
+}
+
+.primalFooterBottom-reserve div{
+    display: flex;
+    flex-direction: column;
+}
+
+.primalFooterBottom-reserve div p{
+    margin: 0;
+    
+}
+
+.listFooter-reserve{
+    padding: 0;
+}
+
+.listFooter-reserve li{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.linkHolderFooter-reserve a{
+    color: black;
+}
+
+
+@media (max-width: 1279px) {
+
+    .reserve-nav div{
+        width: 50%;
+    }
+
+    .bookSessionTitle-reserve{
+        font-size: 3rem;
+
+    }
+    .mainSectionTop-reserve{
+        height: 100vh;
+    }
+    
+
+    .mainSectionTop-reserve div h2{
+        font-size: 2.5rem;
+        
+    }
+
+    .mainSectionTop-reserve div p{
+        font-size: 1.2rem;
+    }
+    .primalFooterTop-reserve{
+        font-size: 1.5rem;
+    }
+    
+    .primalFooterTopImgHolder-reserve{
+        height: 150px;
+        width: 200px;
+
+    }
+
+    .primalFooterBottom-reserve h1{
+        font-size: 1.5rem;
+    }
+
+    .primalFooterBottom-reserve p{
+        font-size: 1rem;
+    }
+
+    .listFooter-reserve{
+        width: 250px;
+    }
+
+}
+

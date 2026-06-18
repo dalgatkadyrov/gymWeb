@@ -1,0 +1,497 @@
+
+.home-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #E9ECFF;
+    padding: 0 30px;
+    border-bottom: 2px solid black;
+
+}
+
+.home-nav div{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Geist Mono", monospace;
+}
+
+
+
+
+.home-btn, .about-btn{
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.reserve-btn{
+    background-color: #808DFD;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+}
+
+.trainHard-title{
+    width: 100%;
+    font-size: 4rem;
+    display: flex;
+    font-family: "Anek Tamil", sans-serif;
+    border-bottom: 2px solid black;
+}
+
+.trainHard-title h1{
+    margin: 0;
+}
+
+.trainHard-title h1:nth-of-type(2){
+    color: #808DFD;
+}
+
+
+.trainHard-content{
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d e';
+    grid-template-columns: minmax(200px, auto) minmax(200px, auto) minmax(200px, auto);
+    grid-template-rows: minmax(200px, auto) minmax(200px, auto) ;
+    height: 150vh;
+    border-bottom: 2px solid black;
+
+    
+}
+
+.trainHard-content div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trainHard-content h2{
+    margin: 0;
+    line-height: 50px;
+    font-size: 4rem;
+    text-align: left;
+    font-family: "Anek Tamil", sans-serif;
+}
+
+.trainHard-content p{
+    font-family: "Geist", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20%;
+}
+
+.trainHard-imgHolder{
+    grid-area: a; 
+    background: url('../../../public/images/hoppingOnTheBox.png' );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.trainHard-forTheCommitted{
+    grid-area: b;
+    padding: 20px;
+    background-color: #E9ECFF;
+}
+
+.trainHard-forTheCommitted div{
+    margin-bottom: 20%;
+}
+
+.trainHard-forTheCommitted div a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.trainHard-guidedByExperts{
+    grid-area: c;
+    padding: 20px;
+    background-color: #E9ECFF;
+}
+
+.trainHard-dynamicOpenGym{
+    grid-area: d;
+    padding: 20px;
+    background-color: #E9ECFF;
+    border-left: 2px solid black;
+}
+
+.trainHard-lastImgHolder{
+    grid-area: e;
+    background-image: url('../../../public/images/standingWithRope.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.joinTheCommunity-title{
+    width: 100%;
+    font-size: 4rem;
+    display: flex;
+    font-family: "Anek Tamil", sans-serif;
+    border-bottom: 2px solid black;
+
+}
+
+.joinTheCommunity-title h1{
+    margin: 0 20px;
+}
+
+.joinTheCommunity-title h1:nth-of-type(2){
+    color: #808DFD;
+}
+
+.joinTheCommunity-cont{
+    display: flex;
+    
+}
+
+
+.discoverYourPotential{
+    display: flex;
+    flex-direction: column;
+    font-family: "Anek Tamil", sans-serif;
+    width: 30%;
+
+}
+
+.discoverYourPotential div{
+    background-color: #E9ECFF;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 30px;
+
+}
+
+
+.discoverYourPotential1-home h2{
+    font-size: 3.5rem;
+    line-height: 50px;
+    margin: 0;
+
+}
+
+
+
+.discoverYourPotential h3{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.discoverYourPotential-img{
+    width: 70%;
+    background-image: url('../../../public/images/squad.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.discoverYourPotential5-home button{
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    margin: 40px 20px;
+    font-family: 'Geis Mono', monospace;
+}
+
+.joinThePrimalTribeToday-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #808DFD;
+    height: 70vh;
+    width: 100%;
+}
+
+.joinThePrimalTribeToday-home h1{
+    font-size: 4rem;
+    margin: 0;
+    font-family: "Anek Tamil", sans-serif;
+}
+
+.joinThePrimalTribeToday-home p{
+    margin: 0;
+    font-family: "Geist Mono", monospace;
+}
+
+.joinThePrimalTribeToday-home button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    background: #E9ECFF;
+}
+
+
+
+.primalTrainingFooter-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9ECFF;
+    width: 100%;
+    height: 70vh;
+    padding: 20px 0;
+    font-family: "Anek Tamil", sans-serif;
+    font-weight: bold;
+}
+
+.primalFooterTop-home{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.primalFooterTopImgHolder-home{
+    background-image: url('../../../public/images/footerImg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+}
+
+.primalFooterBottom-home{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+
+}
+
+.primalFooterBottom-home div{
+    display: flex;
+    flex-direction: column;
+}
+
+.primalFooterBottom-home div p{
+    margin: 0;
+    
+}
+
+.listFooter-home{
+    padding: 0;
+    width: 300px;
+}
+
+.listFooter-home li{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.linkHolderFooter-home a{
+    color: black;
+}
+
+
+@media (max-width: 1279px) {
+
+    .home-nav div{
+        width: 50%;
+    }
+
+    .trainHard-title{
+        font-size: 2.1rem;
+        margin: auto;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .trainHard-imgHolder{
+        background-image: url('../../../public/images/hoppingOnTheBoxMid.png');
+    }
+
+    .trainHard-content{
+        height: 120vh;
+    }
+    
+    .trainHard-content h2{
+        font-size: 3rem;
+    }
+    .trainHard-content p{
+        font-size: 1.2rem;
+    }
+
+    .trainHard-forTheCommitted div{
+        margin-bottom: 10%;
+    }
+
+    .joinTheCommunity-title{
+        font-size: 2.5rem;
+    }
+    .joinThePrimalTribeToday-home h1{
+        text-align: center;
+        line-height: 50px;
+    }
+    .trainHard-lastImgHolder{
+        background-image: url('../../../public/images/standingWithRopeMid.png');
+    }
+
+    .discoverYourPotential1-home h2{
+        font-size: 2rem;
+        line-height: 30px;
+
+    }
+
+    .discoverYourPotential div{
+        height: 100px;
+        padding: 10px 10px;
+
+    }
+
+    .discoverYourPotential h3{
+        font-size: 1.5rem;
+    }
+
+    .discoverYourPotential5-home button{
+        margin: 20px 10px;
+        font-size: 1rem;
+        
+    }
+
+    .primalFooterTopImgHolder-home{
+        height: 150px;
+        width: 200px;
+    }
+
+    .primalFooterTop-home{
+        font-size: 1.5rem;
+    }
+
+    .primalFooterBottom-home h1{
+        font-size: 1.5rem;
+    }
+
+    .primalFooterBottom-home p{
+        font-size: 1rem;
+    }
+
+    .listFooter-home{
+        width: 250px;
+    }
+
+
+}
+
+@media (max-width: 799px) {
+    /* .home-nav{
+
+    } */
+    /* .trainHard-title h1{
+
+    } */
+
+    .trainHard-dynamicOpenGym{
+        display: none;
+        visibility: hidden;
+        height: 0;
+
+    }
+
+    .trainHard-content{
+        /* display: flex;
+        flex-direction: column; */
+        height: fit-content;
+        grid-template-columns: 100%;
+        grid-template-rows: minmax(500px, auto) minmax(500px, auto) minmax(500px, auto) minmax(500px, auto) minmax(500px, auto);
+        grid-template-areas: 
+        'a'
+        'b'
+        'e'
+        'e'
+        'c'
+        ;
+    }
+
+    .trainHard-imgHolder{
+        background-image: url('../../../public/images/hoppingOnTheBoxSmall.png');
+        /* height: 25vh; */
+    }
+    .trainHard-forTheCommitted{
+        /* padding: 30px; */
+    }
+
+    .trainHard-forTheCommitted div p{
+        font-size: 1.5rem;
+    }
+
+    .trainHard-forTheCommitted div a{
+        font-size: 1.5rem;
+    }
+
+    .trainHard-lastImgHolder{
+        background-image: url('../../../public/images/standingWithRopeSmall.png');
+        /* height: 50vh; */
+    }
+    
+    .joinTheCommunity-title h1{
+        font-size: 4.5rem
+    }
+
+    .joinTheCommunity-cont{
+        flex-direction: column-reverse;
+    }
+
+
+    .discoverYourPotential{
+        width: 100%;
+
+    }
+
+    .discoverYourPotential div{
+        height: fit-content;
+        padding: 30px;
+    }
+
+    .discoverYourPotential div h2{
+        font-size: 2.5rem;
+    }
+
+    .discoverYourPotential div h3{
+        font-size: 2rem;
+    }
+
+    .discoverYourPotential div p{
+        font-size: 1.5rem;
+    }
+    
+    .discoverYourPotential div button{
+        margin: auto;
+        padding: 30px;
+        font-size: 1.5rem;
+    }
+    
+    .discoverYourPotential-img{
+        width: 100%;
+        height: 30vh;
+        justify-content: space-between;
+    }
+
+    .joinThePrimalTribeToday-home{
+        height: 50vh;
+    }
+
+    /* допилить футер */
+
+
+
+
+}
+
