@@ -1,18 +1,36 @@
 import './Reserve.css'
 import {Link} from 'react-router-dom'
-
+import { useState } from 'react'
 
 function Reserve(setPage) {
+    
+    const [navVisibility,setNavVisibility] = useState(false)
+
+    
+    
     return(
         <div className="reserve">
             <header>
                 <nav className='reserve-nav'>
-                    <img src="./images/logo.png" alt="" />
-                    <div>
-                        <Link to='/' className='home-btn'>HOME</Link>
-                        <Link to='/about' className='about-btn'>ABOUT</Link>
-                        <Link to='/reserve' className='reserve-btn'>RESERVE YOUR SPOT</Link>
-                    </div>
+                        <img src="./images/Logo.png" alt="" />
+                        <div id='navMenu-reserve'>
+                            <Link to='/' className='home-btn'>HOME</Link>
+                            <Link to='/about' className='about-btn'>ABOUT</Link>
+                            <Link to='/reserve' className='reserve-btn'>RESERVE YOUR SPOT</Link>
+                        </div>
+
+                        <div id="navMenuBurgerMain-reserve">
+                            <div className="burgerMenuButton-reserve" onClick={()=>navVisibility?setNavVisibility(false):setNavVisibility(true)}>
+                                <div className='burgerMenuButtonPart1-reserve'></div>
+                                <div className='burgerMenuButtonPart2-reserve' style={{display: navVisibility?'none':'block'}}></div>
+                            </div>
+                            <div className="burgerMenu-reserve" style={{display: navVisibility?'flex':'none'}}>
+                                <div><Link to='/' className='home-btn'>HOME</Link></div>
+                                <div><Link to='/about' className='about-btn'>ABOUT</Link></div>
+                                <div><Link to='/reserve' className='reserve-btn'>RESERVE YOUR SPOT</Link></div>
+                            </div>
+                        </div>
+
                 </nav>
                 <div className='bookSessionTitle-reserve'>
                     <h1>BOOK A </h1> <h1>SESSION</h1>

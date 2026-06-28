@@ -10,7 +10,8 @@
     padding: 0 30px;
     border-bottom: 2px solid black;
 }
-.reserve-nav div{
+
+#navMenu-reserve{
     width: 25%;
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,9 @@
     font-family: "Geist Mono", monospace;
 }
 
-
+#navMenuBurgerMain-reserve{
+    display: none;
+}
 
 .homeBtn-reserve, .aboutBtn-reserve{
     border: none;
@@ -166,6 +169,8 @@
     background-image: url('../../../public/images/footerImg.png');
     background-repeat: no-repeat;
     background-size: contain;
+    height: 200px;
+    width: 300px;
 }
 
 .primalFooterBottom-reserve{
@@ -202,7 +207,7 @@
 
 @media (max-width: 1279px) {
 
-    .reserve-nav div{
+    #navMenu-reserve{
         width: 50%;
     }
 
@@ -247,3 +252,168 @@
 
 }
 
+@media (max-width:799px) {
+    .reserve-nav{
+        position: relative;
+    }
+
+    #navMenu-reserve{
+        display: none;
+    }
+   
+    #navMenuBurgerMain-reserve{
+        display: flex;
+        align-items: end;
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+
+    .burgerMenuButton-reserve{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burgerMenuButtonPart1-reserve{
+        height: 1px;
+        width: 50px;
+        background-color: black;
+        position: absolute;
+    }
+
+    .burgerMenuButtonPart2-reserve{
+        height: 50px;
+        width: 1px;
+        background-color: black;
+        position: absolute;
+    }
+
+    .burgerMenu-reserve{
+        width: 100%;
+        height: 73%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+    }
+
+    .burgerMenu-reserve div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border-bottom: 2px solid black;
+
+    }
+
+    .burgerMenu-reserve div:nth-of-type(3){
+        background-color:#808DFD;
+    }
+
+    .home-btn, .about-btn{
+        font-size: 2.5rem;
+    }
+
+
+    .reserve-btn{
+        background-color: inherit;
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    .bookSessionTitle-reserve h1{
+        font-size: 3rem;
+        padding: 30px 0 30px 20px;
+    }
+
+    .mainSectionTop-reserve{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .mainSectionTop-reserve div h2{
+        font-size: 2rem;
+    }
+
+    .mainSectionTop-reserve div div{
+        height: 400px;
+        justify-content: end;
+        gap: 50px;
+        margin-bottom: 30px;
+
+    }
+
+    .mainSectionTop-reserve > div{
+        border-bottom: 1px solid black;
+    }
+
+    .mainSectionTop-conditioning{
+        border-left: none;
+        border-right: none;
+    }
+
+    .mainSectionBottom-reserve h2{
+        text-align: center;
+        line-height: 60px;
+        font-size: 3.5rem;
+
+    }
+
+    .mainSectionBottom-reserve p{
+        font-size: 1.1rem;
+        margin: 20px;
+    }
+
+    .primalFooterTop-reserve{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 2.5rem;
+    }
+
+    .primalFooterTop-reserve h1{
+        font-size: 3.5rem;
+    }
+
+    .primalFooterTopImgHolder-reserve{
+        height: 100px;
+        width: 200px;
+        
+    }
+
+    .primalFooterBottom-reserve{
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .primalFooterBottom-reserve > div{
+        margin-left: 30px;
+    }
+
+    .primalFooterBottom-reserve div h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+
+    }
+
+    .primalFooterBottom-reserve div p{
+        font-size: 1.2rem;
+    }
+    .primalTrainingFooter-reserve{
+        height: 80vh;
+    }
+
+    .listFooter-reserve{
+        width: 300px;
+    }
+}

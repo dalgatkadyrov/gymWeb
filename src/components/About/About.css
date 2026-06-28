@@ -10,7 +10,7 @@
     padding: 0 30px;
     border-bottom: 2px solid black;
 }
-.about-nav div{
+#navMenu-about{
     width: 25%;
     display: flex;
     justify-content: space-between;
@@ -18,6 +18,9 @@
     font-family: "Geist Mono", monospace;
 }
 
+#navMenuBurgerMain-about{
+    display: none;
+}
 
 .homeBtn-about, .aboutBtn-about{
     border: none;
@@ -87,6 +90,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     grid-column: 3/4;
+    transition: 1s;
 }
 
 .stage3{
@@ -94,6 +98,7 @@
     background-image: url('../../../public/images/deadLift.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 1s;
 }
 .stage4{
     display: flex;
@@ -114,6 +119,7 @@
     background-image: url('../../../public/images/pushWeight.png');
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 1s;
 }
 .stage6{
     grid-column: 1/4;
@@ -208,14 +214,8 @@
 
 @media (max-width: 1279px) {
 
-    .about-nav div{
+    #navMenu-about{
         width: 50%;
-    }
-
-    .aboutUsTittle-about{
-        font-size: 2.5rem;
-        margin: auto 20px;
-
     }
 
     .grid-about{
@@ -256,8 +256,6 @@
     .stage5{
         grid-column: 1/5;
         background-image: url('../../../public/images/pushWeightMid.png');
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     
     .stage6{
@@ -288,4 +286,188 @@
 
 
 
+}
+
+
+@media (max-width: 799px){
+
+    .about-nav{
+        position: relative;
+    }
+
+    #navMenu-about{
+        display: none;
+    }
+   
+    #navMenuBurgerMain-about{
+        display: flex;
+        align-items: end;
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+
+    .burgerMenuButton-about{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burgerMenuButtonPart1-about{
+        height: 1px;
+        width: 50px;
+        background-color: black;
+        position: absolute;
+    }
+
+    .burgerMenuButtonPart2-about{
+        height: 50px;
+        width: 1px;
+        background-color: black;
+        position: absolute;
+    }
+
+    .burgerMenu-about{
+        width: 100%;
+        height: 73%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+    }
+
+    .burgerMenu-about div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border-bottom: 2px solid black;
+
+    }
+
+    .burgerMenu-about div:nth-of-type(3){
+        background-color:#808DFD;
+    }
+
+    .about-btn, .about-btn{
+        font-size: 2.5rem;
+    }
+
+
+    .reserve-btn{
+        background-color: inherit;
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    .aboutUsTittle-about{
+        font-size: 1.5rem;
+    }
+
+    .grid-about{
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+        
+    }
+
+    .stage1{
+        grid-row: 6/15;
+        grid-column: 1/2;
+        
+    }
+
+    .stage1 h2{
+        font-size: 2.2rem;
+    }
+
+    .stage2{
+        grid-row: 1/6;
+        grid-column: 1/2;
+        background-image: url(../../../public/images/2menSmall.jpg);
+
+    }
+
+    .stage3{
+        grid-row: 15/20;
+        grid-column: 1/2;
+        background-image: url(../../../public/images/deadLiftSmall.jpg);
+    }
+
+    .stage4{
+        grid-row: 20/26;
+        grid-column: 1/2;
+        font-size: 2rem;
+    }
+
+    .stage4 h2{
+        font-size: 2.2rem;
+    }
+    
+    .stage5{
+        grid-row: 26/37;
+        grid-column: 1/2;
+        background-image: url(../../../public/images/pushWeightSmall.png);
+
+    }
+
+    .stage6{
+        grid-column: 1/2;
+        grid-row: 37/49;
+    }
+
+    .stage6 h3{
+        font-size: 3rem;
+    }
+
+    .primalFooterTop-about{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 2.5rem;
+    }
+
+    .primalFooterTop-about h1{
+        font-size: 3.5rem;
+    }
+
+    .primalFooterTopImgHolder-about{
+        height: 100px;
+        width: 200px;
+        
+    }
+
+    .primalFooterBottom-about{
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .primalFooterBottom-about > div{
+        margin-left: 30px;
+    }
+
+    .primalFooterBottom-about div h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+
+    }
+
+    .primalFooterBottom-about div p{
+        font-size: 1.2rem;
+    }
+    .primalTrainingFooter-about{
+        height: 80vh;
+    }
+
+    .listFooter-about{
+        width: 300px;
+    }
 }

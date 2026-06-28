@@ -10,7 +10,7 @@
 
 }
 
-.home-nav div{
+#navMenu-home{
     width: 25%;
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,9 @@
     font-family: "Geist Mono", monospace;
 }
 
-
+#navMenuBurgerMain-home{
+    display: none;
+}
 
 
 .home-btn, .about-btn{
@@ -40,6 +42,7 @@
     color: black;
 }
 
+
 .trainHard-title{
     width: 100%;
     font-size: 4rem;
@@ -48,11 +51,12 @@
     border-bottom: 2px solid black;
 }
 
+
 .trainHard-title h1{
     margin: 0;
 }
 
-.trainHard-title h1:nth-of-type(2){
+.trainHard-title h1 span{
     color: #808DFD;
 }
 
@@ -95,8 +99,9 @@
     background: url('../../../public/images/hoppingOnTheBox.png' );
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 1s;
+    
 }
-
 
 .trainHard-forTheCommitted{
     grid-area: b;
@@ -131,6 +136,7 @@
     background-image: url('../../../public/images/standingWithRope.png');
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 1s;
 }
 
 .joinTheCommunity-title{
@@ -146,7 +152,7 @@
     margin: 0 20px;
 }
 
-.joinTheCommunity-title h1:nth-of-type(2){
+.joinTheCommunity-title h1 span{
     color: #808DFD;
 }
 
@@ -195,6 +201,7 @@
     background-image: url('../../../public/images/squad.png');
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 1s;
 }
 
 
@@ -297,13 +304,13 @@
 }
 
 .linkHolderFooter-home a{
-    color: black;
+    color: black;   
 }
 
 
 @media (max-width: 1279px) {
 
-    .home-nav div{
+    #navMenu-home{
         width: 50%;
     }
 
@@ -344,9 +351,17 @@
         background-image: url('../../../public/images/standingWithRopeMid.png');
     }
 
+    .discoverYourPotential{
+        width: 50%;
+    }
+
+    .discoverYourPotential-img{
+        width: 50%;
+    }
+    
     .discoverYourPotential1-home h2{
-        font-size: 2rem;
-        line-height: 30px;
+        font-size: 2.9rem;
+        line-height: 35px;
 
     }
 
@@ -354,6 +369,10 @@
         height: 100px;
         padding: 10px 10px;
 
+    }
+    
+    .discoverYourPotential-img{
+        background-image: url('../../../public/images/squadMid.png');
     }
 
     .discoverYourPotential h3{
@@ -391,18 +410,92 @@
 }
 
 @media (max-width: 799px) {
-    /* .home-nav{
 
-    } */
-    /* .trainHard-title h1{
+    .home-nav{
+        position: relative;
+    }
 
-    } */
+    #navMenu-home{
+        display: none;
+    }
+   
+    #navMenuBurgerMain-home{
+        display: flex;
+        align-items: end;
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+
+    .burgerMenuButton-home{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burgerMenuButtonPart1-home{
+        height: 1px;
+        width: 50px;
+        background-color: black;
+        position: absolute;
+    }
+
+    .burgerMenuButtonPart2-home{
+        height: 50px;
+        width: 1px;
+        background-color: black;
+        position: absolute;
+    }
+
+    .burgerMenu-home{
+        width: 100%;
+        height: 73%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+    }
+
+    .burgerMenu-home div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border-bottom: 2px solid black;
+
+    }
+
+    .burgerMenu-home div:nth-of-type(3){
+        background-color:#808DFD;
+    }
+
+    .home-btn, .about-btn{
+        font-size: 2.5rem;
+    }
+
+
+    .reserve-btn{
+        background-color: inherit;
+        color: white;
+        font-size: 2.5rem;
+    }
 
     .trainHard-dynamicOpenGym{
         display: none;
-        visibility: hidden;
-        height: 0;
+        padding: 0;
+    }
 
+    .trainHard-dynamicOpenGym *{
+        display: none;
     }
 
     .trainHard-content{
@@ -410,7 +503,7 @@
         flex-direction: column; */
         height: fit-content;
         grid-template-columns: 100%;
-        grid-template-rows: minmax(500px, auto) minmax(500px, auto) minmax(500px, auto) minmax(500px, auto) minmax(500px, auto);
+        grid-template-rows: minmax(250px, auto) minmax(250px, auto) minmax(250px, auto) minmax(250px, auto) minmax(250px, auto) ;
         grid-template-areas: 
         'a'
         'b'
@@ -424,26 +517,54 @@
         background-image: url('../../../public/images/hoppingOnTheBoxSmall.png');
         /* height: 25vh; */
     }
-    .trainHard-forTheCommitted{
-        /* padding: 30px; */
+    
+
+    .trainHard-title{
+        width: 100%;
+    }
+
+    .trainHard-title h1{
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+
+    .trainHard-forTheCommitted h2{
+        font-size: 2.2rem;
     }
 
     .trainHard-forTheCommitted div p{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .trainHard-forTheCommitted div a{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .trainHard-lastImgHolder{
         background-image: url('../../../public/images/standingWithRopeSmall.png');
+
         /* height: 50vh; */
+    }
+
+    .trainHard-guidedByExperts{
+        height: fit-content;
+    }
+
+    .trainHard-guidedByExperts h2{
+        font-size: 2.5rem;
+    }
+
+    .trainHard-guidedByExperts p{
+        font-size: 1.3rem;
+        margin-top: 10px;
     }
     
     .joinTheCommunity-title h1{
-        font-size: 4.5rem
+        font-size: 2.5rem;
+        margin: 10px;
+
     }
+
 
     .joinTheCommunity-cont{
         flex-direction: column-reverse;
@@ -455,29 +576,35 @@
 
     }
 
+    .discoverYourPotential-img{
+        background-image: url('../../../public/images/squadSmall.png');
+    }
+
     .discoverYourPotential div{
         height: fit-content;
-        padding: 30px;
+        padding: 20px;
     }
 
     .discoverYourPotential div h2{
-        font-size: 2.5rem;
+        font-size: 1.9rem;
     }
 
     .discoverYourPotential div h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .discoverYourPotential div p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     .discoverYourPotential div button{
         margin: auto;
-        padding: 30px;
-        font-size: 1.5rem;
+        padding: 20px;
+        font-size: 1.2rem;
     }
+
     
+
     .discoverYourPotential-img{
         width: 100%;
         height: 30vh;
@@ -488,7 +615,55 @@
         height: 50vh;
     }
 
-    /* допилить футер */
+    .joinThePrimalTribeToday-home h1{
+        font-size: 3rem;
+    }
+
+    .primalFooterTop-home{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 2.5rem;
+    }
+
+    .primalFooterTop-home h1{
+        font-size: 3.5rem;
+    }
+
+    .primalFooterTopImgHolder-home{
+        height: 100px;
+        width: 200px;
+        
+    }
+
+    .primalFooterBottom-home{
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .primalFooterBottom-home > div{
+        margin-left: 30px;
+    }
+
+    .primalFooterBottom-home div h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+
+    }
+
+    .primalFooterBottom-home div p{
+        font-size: 1.2rem;
+    }
+    .primalTrainingFooter-home{
+        height: 80vh;
+    }
+
+    .listFooter-home{
+        width: 300px;
+    }
+
+
+    /* осталось сделать анимации при скроле */
 
 
 
